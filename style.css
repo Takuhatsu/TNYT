@@ -1,0 +1,221 @@
+@font-face {
+    font-family: SFProText;
+    src: url(Fonts/SF_Pro_Text/SF-Pro-Text-Regular.otf);
+}
+
+html {
+    background-color: rgb(231, 231, 231);
+    font-family: SFProText, sans-serif;
+    font-size: 17px;
+    font-weight: 100;
+}
+
+
+body {
+    display: flex;
+    box-sizing: content-box;
+    justify-content: center;
+}
+
+.box {
+    box-sizing: content-box;
+    width: 100%;
+    max-width: 1200px;
+    position: fixed;
+    /* border: 1px solid black; */
+    top: 2px;
+    bottom: 112px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    padding: 1.5rem 1.5rem;
+    margin: 0 3rem;
+}
+
+.nyt-logo-mobile {
+    background-image: url("Media/not-logo-185x26.svg");
+    background-repeat: no-repeat;
+    width:185px;
+    height:26px;
+    display:none;
+}
+
+@media only screen and (max-width: 500px) {
+    .nyt-logo-mobile {
+        margin: 1rem 1rem;
+        display:block;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .nav-list {
+        display:block;
+        margin:auto;
+        width: 350px;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .navigation {
+        padding: 10px 10px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .nav-list {
+        display:block;
+        margin:auto;
+        width: 350px;
+        padding-top: 0rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .nyt-logo {
+        display:none;
+    }
+}
+
+.nav-list li.nyt-logo {
+    background-image: url("Media/not-logo-185x26.svg");
+    background-repeat: no-repeat;
+    width:185px;
+    height:26px;
+}
+
+.nav-list li a {
+    color:rgb(124, 124, 124);
+    text-decoration: none;
+}
+
+.nav-list li a:hover {
+    opacity: 40%;
+    transition: all 0.1s;
+}
+
+.navigation {
+    background-color: rgb(231, 231, 231);
+    padding: 0;
+    margin-bottom: 45px;
+}
+
+@media only screen and (max-width: 500px) {
+    .navigation {
+        margin-bottom: 0;
+    }
+}
+
+main {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+.cntr-animation {
+    /* border: 1px solid red; */
+    width: 70%;
+    margin:auto;
+    padding-bottom:0.4rem;
+    border-bottom: 1px solid rgb(168, 168, 168);
+}
+
+@media only screen and (max-width: 500px) {
+    .cntr-animation {
+        margin-top: 15%; 
+        width: 350px;
+    }
+}
+
+#CA {
+    width: 100%;
+
+}
+
+#caption {
+    margin:auto;
+    font-style: italic;
+    font-size: 15px;
+    text-align: right; 
+}
+
+/* #footer-line {
+    border-top: 1px solid grey;
+    opacity: 50%;
+    margin: 0 3rem;
+    display: flex;
+} */
+
+footer {
+    /* display: flex; */
+    /* border: 1px solid red; */
+    margin: 0 3rem;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-c-1 {
+    font-size: 14px;
+    text-align: left;
+    
+}
+
+.footer-c-1 a {
+    color:rgb(124, 124, 124);
+}
+
+.footer-c-1 a:hover {
+    opacity: 40%;
+    transition: all 0.1s;
+    color:rgb(124, 124, 124);
+}
+
+.sup3rinfo {
+    color:rgb(124, 124, 124);
+    font-size: 14px;
+    text-align: right;
+}
+
+.sup3rinfo #xxxx {
+    text-align: center;
+}
+
+.sup3rinfo p {
+    line-height: 0.2rem;
+}
+
+.footer-c-1 p {
+    line-height: 0.2rem;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1.5rem;
+    margin: 0 6rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .container-footer {
+        padding: 1rem 1rem;
+        margin: 0 0rem;
+    }
+}
+
+#footer-logo {
+    /* border: 1px solid black; */
+    background-image: url("Media/footer.svg");
+    background-repeat: no-repeat;
+    height: 26px;
+    width: 26px;
+}
+
+
